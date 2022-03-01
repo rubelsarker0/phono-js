@@ -4,3 +4,42 @@
 body {
 	font-family: 'Spectral', serif;
 }
+
+/* search input custom style  */
+
+.bg-success {
+	background-color: #15ca20 !important;
+}
+/* Card custom design  */
+.border-success {
+	border-color: #15ca20 !important;
+}
+
+.card {
+	margin-bottom: 1.5rem;
+	box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%),
+		0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+
+.text-success {
+	color: #15ca20 !important;
+}
+
+.btn-success {
+	color: #fff;
+	background-color: #15ca20;
+	border-color: #15ca20;
+}
+
+/* Spinner style  */
+#spinner {
+	position: fixed;
+	z-index: 1031;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.spinner-border {
+	width: 5rem !important;
+	height: 5rem !important;
+}
