@@ -25,6 +25,7 @@ const loadUserPhones = async () => {
 		const userSearchText = searchField.value.toLocaleLowerCase();
 		if (userSearchText === '' || !isNaN(userSearchText)) {
 			phoneContainer.textContent = '';
+			phoneDetailContainer.textContent = '';
 			errorMessage.textContent = `Please provide your phone name`;
 			errorMessage.classList.remove('d-none');
 			showMoreBtn.classList.add('d-none');
@@ -55,6 +56,7 @@ const loadUserPhones = async () => {
 const displayUserPhone = (phoneData) => {
 	if (phoneData.length === 0) {
 		phoneContainer.textContent = '';
+		phoneDetailContainer.textContent = '';
 		errorMessage.textContent = `Result not found!! try again..`;
 		errorMessage.classList.remove('d-none');
 		showMoreBtn.classList.add('d-none');
