@@ -13,7 +13,57 @@
 </head>
 
 <body>
+    <!-- header section  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light my-2">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="rounded" src="./assets/images/logo2.png" height="45px" alt="phono logo image" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" aria-current="page" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="#">iPhone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="#">Android</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <!-- main section  -->
+
+    <main>
+        <!-- search section  -->
+        <section class="search container py-4">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="input-group mb-3 w-50">
+                    <input id="search-input" type="text" class="form-control" placeholder="Search your desire phone"
+                        aria-label="Search your phone" aria-describedby="search-input" />
+                    <div class="input-group-append">
+                        <button class="bg-success text-white input-group-text text-uppercase" id="search-btn"
+                            onclick="getUserPhones()">
+                            search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Bootstrap JS Bundle link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
